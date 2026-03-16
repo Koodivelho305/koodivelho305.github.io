@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lomake tehtävä</title>
+    <meta chardset="UTF-8">
+</head>
+
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Contact information:</legend><!--Tekee viivan sisälle tekstin-->
+                        <table>
+                            <tr>
+                                <td><label for="fname">Firstname:</label>
+                                <td><input type="text" id="fname"></td>
+                                <td><label for="contact">Preferred contact method:</label></td>
+
+                            </tr>
+                            <tr>
+                                <td><label for="lname">Lastname:</label></td>
+                                <td><input type="text" id="lname"></td>
+                                <td><input type="checkbox" id="emailselect">
+                                    <label for="emailselect">Email</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="emailselect">Email:</label></td>
+                                <td><input type="email" id="email"></td>
+                                <td><input type="checkbox" id="telselect"><!--tekee pienet boxit-->
+                                    <label for="telselect">Telephone</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="telselect">Telephone:</label></td>
+                                <td><input type="Telephone" id="Telephone"></label></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <table>
+                            <legend>Feedback:</legend>
+                            <tr>
+                                <td><label for="messagesubject">Message subject:</label></td>
+                                <td><input type="Message" id="messagesubject"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><!--tekee boxin leveyden kahteen sarakkeeseen-->
+                                    <textarea rows="15" cols="50"></textarea><!--tekee tekstikentän-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="Filemessage">Attach a file:</label></td>
+                                <td><input type="file" id="file"><!--tekee valitse tiedosto napin--></td>
+                            </tr>
+
+                            <td>
+                                <input type="submit" value="Send"><!--tekee lähetä napin-->
+                            </td>
+            </tr>
+        </table>
+
+        </fieldset>
+        </td>
+        </tr>
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>
