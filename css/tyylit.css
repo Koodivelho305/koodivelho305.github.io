@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(76, 112, 128);
+}
+
+fieldset {
+    background-color: cyan;
+    color: black;
+    border-color: crimson;
+    border-width: 5px;
+    width: 0px;
+}
+
+td {
+    text-align: left;
+    letter-spacing: 3px;
+    border-width: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: violet;
+    border-style: dashed;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+.reunukset {
+    text-align: left;
+    letter-spacing: 3px;
+    border-width: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: violet;
+    border-style: dashed;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
