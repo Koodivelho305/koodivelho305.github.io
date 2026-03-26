@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/grid.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tehtävä linkit
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item"
+                                    href="https://koodivelho305.github.io/Lomaketeht%C3%A4v%C3%A4_css.html">Lomaketehtävä_css</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://koodivelho305.github.io/HTML%20teht%C3%A4v%C3%A4_css.html">HTML
+                                    tehtävä_css</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://koodivelho305.github.io/Lomaketeht%C3%A4v%C3%A4.html">Normaali HTML
+                                    tehtävä</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <h1>Hello, world!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">HTML</div>
+                <div class="card-body">HTML eli HyperText Markup Language, on verkkosivujen rakenteen kuvaamiseen
+                    käytetty merkintäkieli.
+                </div>
+
+                <div class="card-body">&lt;html&gt;
+                    <div>&lt;head&gt;
+                        &lt;style&gt;
+                        p {
+                        font-size: 20px;
+                        background-color: #e0e0e0;
+                        padding: 10px;
+                        border-radius: 8px;
+                        }
+                        &lt;/style&gt;
+                        &lt;/head&gt;
+
+                        &lt;body&gt;
+                        &lt;p&gt;Tämä kappale on isommalla fontilla ja harmaassa laatikossa.&lt;/p&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;</div>
+
+
+                    <div class="vali">Tässä esimerkissä muutetaan kappaleen fonttikoko ja lisätään taustalaatikko.</div>
+
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">HEAD</div>
+                <div class="card-body">HEAD on HTML-sivun “aivojen” osa: se sisältää kaiken metatiedon, jota selain
+                    tarvitsee sivun ymmärtämiseen, mutta jota ei näytetä käyttäjälle.
+                </div>
+
+                <div class="card-body">&lt;head&gt;
+                    <div>&lt;style&gt;
+                        h1 {
+                        color: red;
+                        }
+                        &lt;/style&gt;
+                        &lt;/head&gt;</div>
+
+                    <div class="vali">Tämä - muuttaa kaikkien h1-otsikoiden värin punaiseksi.</div>
+                </div>
+
+            </div>
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">BODY</div>
+                <div class="card-body">tarkoittaa HTML-sivun näkyvää sisältöä — kaikkea sitä, mikä oikeasti ilmestyy
+                    ruudulle, kuten teksti, kuvat, linkit ja taulukot. Se on yksi HTML-sivun tärkeimmistä osista, ja
+                    jokaisella sivulla saa olla vain yksi body elementti.
+                </div>
+
+                <div class="card-body">&lt;body&gt;
+
+                    <div>&lt;style&gt;
+                        img {
+                        width: 200px;
+                        border: 2px solid black;
+                        }
+                        &lt;/style&gt;
+
+                        &lt;img src="kuva.jpg" alt="Esimerkkikuva"&gt;
+
+                        &lt;/body&gt;</div>
+
+                    <div class="vali">Tässä esimerkissä muokataan kuvan kokoa CSS:llä.</div>
+
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">P</div>
+                <div class="card-body">HTML:n p-elementti tarkoittaa kappaletta. Selaimet lisäävät automaattisesti
+                    tyhjää tilaa ennen ja jälkeen kappaleen, ja elementti toimii lohkotason rakenteena tekstin
+                    jäsentämiseen
+                </div>
+
+                <div class="card-body">&lt;body&gt;
+
+                    <div>&lt;style&gt;
+                        p {
+                        font-size: 18px;
+                        padding: 12px;
+                        background-color: #f5f5f5;
+                        border-left: 4px solid gray;
+                        }
+                        &lt;/style&gt;
+
+                        &lt;p&gt;Tämä kappale on tyylitelty pehmeällä taustalla ja vasemmalla reunaviivalla.&lt;/p&gt;
+
+                        &lt;/body&gt;</div>
+
+                    <div class="vali">Tässä esimerkissä muokataan kappaleen sisäistä välistystä ja fonttia, ei väriä.
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">IMG</div>
+                <div class="card-body">HTML:n img-elementtiä käytetään kuvan näyttämiseen verkkosivulla. Se ei
+                    “sisällä” kuvaa, vaan luo paikan, johon selain lataa kuvatiedoston annetusta osoitteesta.
+                    Tärkeimmät
+                    attribuutit ovat src (kuvan polku) ja alt (vaihtoehtoinen teksti).
+                </div>
+
+                <div class="card-body">&lt;body&gt;
+
+                    <div>&lt;style&gt;
+                        img {
+                        width: 250px;
+                        border-radius: 12px;
+                        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                        }
+                        &lt;/style&gt;
+
+                        &lt;img src="kuva.jpg" alt="Esimerkkikuva"&gt;
+
+                        &lt;/body&gt;</div>
+
+                    <div class="vali">Tässä esimerkissä muokataan kuvan kokoa ja lisätään pyöristetyt kulmat.
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">A</div>
+                <div class="card-body">HTML:n A-elementti tarkoittaa ankkuria (anchor) ja sitä käytetään
+                    hyperlinkkien
+                    luomiseen. Se on yksi tärkeimmistä HTML-tageista, koska sen avulla käyttäjä voi siirtyä sivulta
+                    toiselle, samaan sivuun sisäisesti tai avata sähköpostin/puhelun linkistä.
+                </div>
+
+                <div class="card-body">
+                    <div>&lt;body&gt;
+                        &lt;style&gt;
+                        a {
+                        display: inline-block;
+                        padding: 10px 15px;
+                        background-color: #e6e6e6;
+                        text-decoration: none;
+                        border-radius: 6px;
+                        font-weight: bold;
+                        }
+                        &lt;/style&gt;
+
+                        &lt;a href="https://example.com"&gt;Tämä on tyylitelty linkki&lt;/a&gt;
+
+                        &lt;/body&gt;</div>
+
+                    <div class="vali">Tässä esimerkissä muokataan linkin ulkoasua: lisätään taustalaatikko, sisätilaa ja
+                        pyöristetyt kulmat.
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">BR</div>
+                <div class="card-body">HTML:n br-elementti tekee yksinkertaisen rivinvaihdon tekstissä — se on tyhjä
+                    elementti, jota käytetään silloin, kun halutaan katkaista rivi ilman uutta kappaletta. Tämä on
+                    hyödyllistä esimerkiksi osoitteissa, runoissa tai muussa tekstissä, jossa rivijako on
+                    olennainen.
+                </div>
+
+                <div class="card-body">
+                    <div>&lt;body&gt;
+
+                        &lt;style&gt;
+                        br {
+                        margin-bottom: 20px;
+                        display: block;
+                        }
+                        &lt;/style&gt;
+
+                        Teksti ennen rivinvaihtoa.&lt;br&gt;
+                        Teksti rivinvaihdon jälkeen.
+
+                        &lt;/body&gt;</div>
+
+                    <div class="vali">Lisätään ylimääräistä väliä rivinvaihdon kohdalle.
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 col-md-3 col-sm-4 card text-bg-info">
+                <div class="card-header">H1</div>
+                <div class="card-body">HTML:n H1-elementti on sivun tärkein otsikko — se kertoo sekä käyttäjälle
+                    että
+                    hakukoneille, mistä sivulla on kyse. Se on hierarkian korkein otsikkotaso ja sitä tulisi käyttää
+                    vain kerran per sivu.
+                </div>
+
+                <div class="card-body">
+                    <div>&lt;body&gt;
+                        &lt;style&gt;
+                        h1 {
+                        font-size: 32px;
+                        text-align: center;
+                        border-bottom: 3px solid #444;
+                        padding-bottom: 10px;
+                        }
+                        &lt;/style&gt;
+
+                        &lt;h1&gt;Tämä on tyylitelty otsikko&lt;/h1&gt;
+
+                        &lt;/body&gt;</div>
+
+                    <div class="vali">Tässä esimerkissä muokataan otsikon kokoa ja lisätään alaviiva‑korostus.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
